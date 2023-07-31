@@ -7,7 +7,7 @@ var loader = document.querySelector('.preloader');
        setTimeout(() => {
         
            loader.style.display = 'none'
-       }, 4000);
+       }, 2000);
     });
 
 
