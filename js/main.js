@@ -1,27 +1,33 @@
-//perloader
+//perloader & animtion onload
 
+let animtelogo = document.querySelector('.animtelogo');
+
+let textbox = document.querySelector('.text-box');
 var loader = document.querySelector('.preloader');
+const text = document.querySelector('.secend');
 
-    
     window.addEventListener("load", function(){
        setTimeout(() => {
         
-           loader.style.display = 'none'
+           loader.style.display = 'none';
+           animtelogo.classList.add('logo-animate');
+           textbox.classList.add('text-boxanimte');
        }, 4000);
+       
+
     });
 
-
-const text = document.querySelector('.secend');
 const textLoad = () => {
     setTimeout(()=> {
         text.textContent = "Mohamed"
         },0);
-setTimeout(()=> {
-text.textContent = "a web developer"
-},4000);
+    setTimeout(()=> {
+    text.textContent = "a web developer"
+    },4000);
 }
 textLoad();
 setInterval(textLoad, 8000);
+//End preloader
 
 let back = document.querySelector('.back');
 let menuo = document.querySelector('.menu-mobile');
